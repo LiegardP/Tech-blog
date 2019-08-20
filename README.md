@@ -1,0 +1,2 @@
+# tech-blog
+django blog
