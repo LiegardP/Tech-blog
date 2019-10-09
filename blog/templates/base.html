@@ -1,0 +1,22 @@
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charse="utf-8">
+	<title>Articles</title>
+    <link rel="stylesheet" href="{% static 'src/scss/style.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>
+            <a href="{% url 'articles:list' %}">
+                <img src="{% static 'dist/img/origami.svg' %}">
+            </a>
+        </h1>
+        {% block content %}
+        
+        {% endblock %}
+    </div>
+</body>
+</html>
