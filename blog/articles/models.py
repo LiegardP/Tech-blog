@@ -9,7 +9,7 @@ class Article(models.Model):
     body = models.TextField()
     creation_date = models.DateTimeField(auto_now_add=True)
     modification_date = models.DateTimeField(auto_now_add=False, blank=True, null=True)
-    # thumbnail
+    thumbnail = models.ImageField(default='default.png', blank=True)
     # author
     # tags
 
