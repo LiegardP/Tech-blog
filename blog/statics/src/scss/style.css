@@ -1,5 +1,23 @@
 body {
-    background-color: cornflowerblue;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-flow: column;
 }
 
- 
+.main-logo {
+    width: 35px;
+    height: 35px;
+}
+
+.top-banner {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    background-image: url('../../dist/img/top-banner.svg');
+}
+
+.content__wrapper {
+    width: 1000px;
+    background-color: darkred;
+    margin: auto;
+}

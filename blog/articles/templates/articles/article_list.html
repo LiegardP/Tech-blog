@@ -4,6 +4,7 @@
     <h1>ARTICLE LIST</h1>
 
     {% for article in articles %}
+
         <h2><a href="{% url 'articles:detail' slug=article.slug %}">{{ article.title}}</a></h2>
         <p>{{article.snippet}}</p>
         <p>{{article.creation_date}}</p>

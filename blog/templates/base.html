@@ -5,15 +5,30 @@
 <head>
 <meta charse="utf-8">
 	<title>Articles</title>
-    <link rel="stylesheet" href="{% static 'src/scss/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'src/scss/normalize.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'src/scss/style.css' %}">
 </head>
 <body>
-    <div class="wrapper">
-        <h1>
+    <section class="top-banner top-banner__container">
+        <header classs="header top-banner__header">
             <a href="{% url 'articles:list' %}">
-                <img src="{% static 'dist/img/origami.svg' %}">
+                <img class="main-logo" src="{% static 'dist/img/origami.svg' %}"> paperblog
             </a>
-        </h1>
+
+            <nav class="header__nav nav">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </nav>
+
+        </header>
+    </section>
+
+    <div class="content content__wrapper">
+
         {% block content %}
         
         {% endblock %}
