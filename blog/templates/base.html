@@ -10,21 +10,26 @@
 </head>
 <body>
     <section class="top-banner top-banner__container">
-        <header classs="header top-banner__header">
-            <a href="{% url 'articles:list' %}">
-                <img class="main-logo" src="{% static 'dist/img/origami.svg' %}"> paperblog
+        <header class="header top-banner__header">
+            <a class="signature" href="{% url 'articles:list' %}">
+                <img class="main-logo" src="{% static 'dist/img/origami.svg' %}">
+                <p class="main-title">| paperblog</p>
             </a>
 
             <nav class="header__nav nav">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <ul class="nav__content">
+                    <li class="nav__content-item"><a href="">Articles</a></li>
+                    <li class="nav__content-item"><a href="">Tutorials</a></li>
+                    <li class="nav__content-item"><a href="">Talk</a></li>
+                    <li class="nav__content-item"><a href="">La team</a></li>
+                    <li class="nav__content-item cta"><a href="">Newsletters</a></li>
                 </ul>
             </nav>
-
         </header>
+
+        <h1 class="heading-1"> WE ARE PAPERNEST </h1>
+        <img class="top__illu-1" src="{% static 'dist/img/illu_1.svg' %}">
+        <img class="top__illu-2" src="{% static 'dist/img/illu_2.svg' %}">
     </section>
 
     <div class="content content__wrapper">
@@ -33,5 +38,9 @@
         
         {% endblock %}
     </div>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
