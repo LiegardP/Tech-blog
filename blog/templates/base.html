@@ -23,6 +23,12 @@
                     <li class="nav__content-item"><a href="">Talk</a></li>
                     <li class="nav__content-item"><a href="">La team</a></li>
                     <li class="nav__content-item cta"><a href="">Newsletters</a></li>
+                    <li class="nav__logout-btn">
+                    <form class="nav_logout-link" action="{% url 'accounts:logout' %}" method="POST">
+                        {% csrf_token %}
+                        <button type="submit" value="logout">Logout</button>
+                    </form>
+                    </li>
                 </ul>
             </nav>
         </header>
