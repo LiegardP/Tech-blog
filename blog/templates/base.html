@@ -26,7 +26,8 @@
                     <li class="nav__logout-btn">
                     <form class="nav_logout-link" action="{% url 'accounts:logout' %}" method="POST">
                         {% csrf_token %}
-                        <button type="submit" value="logout">Logout</button>
+                        {{ form }}
+                        <input type="submit" value="logout">Logout</input>
                     </form>
                     </li>
                 </ul>
@@ -34,8 +35,8 @@
         </header>
 
         <h1 class="heading-1"> WE ARE PAPERNEST </h1>
-        <img class="top__illu-1" src="{% static 'dist/img/illu_1.svg' %}">
-        <img class="top__illu-2" src="{% static 'dist/img/illu_2.svg' %}">
+        {% comment %} <img class="top__illu-1" src="{% static 'dist/img/illu_1.svg' %}">
+        <img class="top__illu-2" src="{% static 'dist/img/illu_2.svg' %}"> {% endcomment %}
     </section>
 
     <div class="content content__wrapper">
